@@ -1,0 +1,216 @@
+<!DOCTYPE html><html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Notch - Bem-vindo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }body {
+  background: linear-gradient(-45deg, #3a1c71, #d76d77, #ffaf7b, #3a1c71, #ff6cf4, #6cff95);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.titulo {
+  font-size: 3.1em;
+  text-align: center;
+  margin-top: 100px;
+  animation: fadeIn 5s ease-in forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.sobre {
+  background-color: #5865F2;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.videoDC {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 15px;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.info-text {
+  font-size: 1.1em;
+  text-align: left;
+  color: #f5f5f5;
+}
+
+.botãoDC, .botãoBrawl, .mostrarIntegrantes {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 20px auto;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1em;
+  background: linear-gradient(to right, #5865F2, #1d008a, #8b6cff);
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.botãoDC:hover, .botãoBrawl:hover, .mostrarIntegrantes:hover {
+  opacity: 0.9;
+}
+
+.somos, .somos2 {
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.ImgTopN {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 15px;
+}
+
+.Melhores {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.box2, .box {
+  background-color: #4d4d4d;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.box3 {
+  background-color: #6d6d6d;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.integrantes {
+  font-size: 1.2em;
+}
+
+#listaIntegrantes {
+  display: none;
+  margin-top: 10px;
+  font-size: 1em;
+  color: #fff;
+}
+
+.box-text {
+  font-size: 0.9em;
+  text-align: center;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.criadores {
+  text-align: center;
+  font-size: 1em;
+  margin-top: 20px;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .titulo {
+    font-size: 2em;
+  }
+
+  .info-text {
+    font-size: 1em;
+  }
+
+  .ImgTopN {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="titulo">🔥𝑩𝒆𝒎 𝒗𝒊𝒅𝒐 𝒂 𝑻𝒐𝒑 𝑵𝒐𝒕𝒄𝒉🔥</h1>
+    <p class="somos">Somos um servidor.</p>
+    <p class="somos2">Somos uma comunidade de time</p>
+    <a class="botãoDC" href="https://discord.gg/3NN7J5ta" target="_blank">𝙀𝙣𝙩𝙧𝙖𝙧 𝙣𝙤 𝙨𝙚𝙧𝙫𝙞𝙙𝙤𝙧</a><div class="sobre">
+  <video src="videoDC.mp4" class="videoDC" autoplay muted loop playsinline></video>
+  <div class="info-text">
+    <p>• Todas as notícias da temporada</p>
+    <p>• Novidades da Supercell</p>
+    <p>• Chat geral</p>
+    <p>• Chats de voz amistosos</p>
+    <p>• Chats de voz duo e trio</p>
+    <p>• Chats de voz Ranqueado</p>
+  </div>
+</div>
+
+<div class="Melhores">"Oɴᴅᴇ ᴏs ᴍᴇʟʜᴏʀᴇs ᴊᴏɢᴀᴍ"</div>
+<img src="TopNotch.png" class="ImgTopN" alt="Logo Top Notch">
+
+<div class="box2">
+  <div class="box3">
+    <p class="integrantes">Integrantes do time Top Notch</p>
+    <button class="mostrarIntegrantes" onclick="mostrarIntegrantes()">Mostrar Integrantes</button>
+    <div id="listaIntegrantes">
+      <p>• TN|Viny</p>
+      <p>• TN|Renik</p>
+      <p>• TN|Uillzim <small>(por um tempo)</small></p>
+    </div>
+  </div>
+</div>
+
+<div class="box">
+  <button href="https://wa.me/qr/3PJCMPRE3G3UJ1"class="botãoBrawl">𝗙𝗮𝗹𝗲 𝗰𝗼𝗺𝗶𝗴𝗼👋 WP</button>
+  <div class="box-text">
+    <p>Site feito por Vinicius Souza</p>
+    <p>&copy; <span id="year"></span> viny. Todos os direitos reservados.</p>
+  </div>
+</div>
+
+<div class="criadores">
+  <p><strong>Criadores do Top Notch:</strong> Vinícius e Renner</p>
+</div>
+
+  </div>  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    function mostrarIntegrantes() {
+      const lista = document.getElementById("listaIntegrantes");
+      lista.style.display = lista.style.display === "none" ? "block" : "none";
+    }
+  </script></body>
+</html>
